@@ -29,7 +29,7 @@
 (defn home-page []
   (fn []
     [:span.main
-     [:h1 "BEL: Welcome to reagent_heroku"]
+     [:h1 "second BEL: Welcome to reagent_heroku"]
      [:ul
       [:li [:a {:href (path-for :items)} "Items of reagent_heroku"]]
       [:li [:a {:href "/broken/link"} "Broken link"]]]]))
@@ -103,8 +103,8 @@
         (reagent/after-render clerk/after-render!)
         (session/put! :route {:current-page (page-for current-page)
                               :route-params route-params})
-        (clerk/navigate-page! path)
-        ))
+        (clerk/navigate-page! path)))
+        
     :path-exists?
     (fn [path]
       (boolean (reitit/match-by-path router path)))})

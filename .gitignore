@@ -18,3 +18,4 @@ pom.xml.asc
 /resources/public/js/
 /.clj-kondo
 /.lsp
+/package-lock.json

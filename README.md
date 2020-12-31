@@ -2,8 +2,28 @@
 BEL: SEE ONLINE FOR CURRENT:
 https://github.com/reagent-project/reagent-template
 
+
+
+BELs Github
+https://github.com/bennoloeffler/reagent_heroku.git
+
+BELs Heroku:
+https://reagent-heroku.herokuapp.com/
+
 NAME of APP in heroku
-https://dry-spire-62940.herokuapp.com/ | https://git.heroku.com/dry-spire-62940.git
+
+install shadow-cljs in bestehendes Projekt
+npm install --save-dev shadow-cljs
+
+start shadow
+npx shadow-cljs server
+npx shadow-cljs watch app
+
+??? lein do clean, uberjar  
+heroku local  
+git commit  
+git push  
+
 
 This is the reagent_heroku project.
 
