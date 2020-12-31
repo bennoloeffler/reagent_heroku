@@ -7,8 +7,8 @@
 
 (def mount-target
   [:div#app
-   [:h2 "Welcome to reagent_heroku"]
-   [:p "please wait while Figwheel/shadow-cljs is waking up ..."]
+   [:h2 "Welcome to BELs reagent_heroku"]
+   [:p "please wait while app (shadow-cljs) is waking up ..."]
    [:p "(Check the js console for hints if nothing exciting happens.)"]])
 
 (defn head []

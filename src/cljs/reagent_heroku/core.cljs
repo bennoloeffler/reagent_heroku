@@ -35,7 +35,7 @@
      [:br]
      ;[:div [calc/calc]]
      [:br]
-     ;[:div [bmi/bmi]]
+     [bmi/bmi]
      [:br]]))
 
 (comment
