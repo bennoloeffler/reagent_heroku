@@ -19,7 +19,7 @@ start shadow
 npx shadow-cljs server
 npx shadow-cljs watch app
 
-??? lein do clean, uberjar  
+lein do clean, uberjar  (needed only local)
 heroku local  
 git commit  
 git push  
