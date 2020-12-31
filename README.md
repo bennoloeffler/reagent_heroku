@@ -2,6 +2,9 @@
 BEL: SEE ONLINE FOR CURRENT:
 https://github.com/reagent-project/reagent-template
 
+NAME of APP in heroku
+https://dry-spire-62940.herokuapp.com/ | https://git.heroku.com/dry-spire-62940.git
+
 This is the reagent_heroku project.
 
 ## Development mode
