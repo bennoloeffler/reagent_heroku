@@ -29,7 +29,7 @@
 (defn home-page []
   (fn []
     [:span.main
-     [:h1 "Welcome to reagent_heroku"]
+     [:h1 "BEL: Welcome to reagent_heroku"]
      [:ul
       [:li [:a {:href (path-for :items)} "Items of reagent_heroku"]]
       [:li [:a {:href "/broken/link"} "Broken link"]]]]))
