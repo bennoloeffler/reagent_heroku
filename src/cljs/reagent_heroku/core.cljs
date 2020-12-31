@@ -5,7 +5,9 @@
    [reagent.session :as session]
    [reitit.frontend :as reitit]
    [clerk.core :as clerk]
-   [accountant.core :as accountant]))
+   [accountant.core :as accountant]
+   [comp.calculator :as calc]
+   [comp.bmi :as bmi]))
 
 ;; -------------------------
 ;; Routes
@@ -29,10 +31,17 @@
 (defn home-page []
   (fn []
     [:span.main
-     [:h1 "second BEL: Welcome to reagent_heroku"]
-     [:ul
-      [:li [:a {:href (path-for :items)} "Items of reagent_heroku"]]
-      [:li [:a {:href "/broken/link"} "Broken link"]]]]))
+     [:h1 "BELs erstes ClojureScript..."]
+     [:br]
+     [:div [calc/calc]]
+     [:br]
+     [:div [bmi/bmi]]
+     [:br]]))
+
+(comment
+  [:ul]
+  [:li [:a {:href (path-for :items)} "Items of reagent_heroku"]]
+  [:li [:a {:href "/broken/link"} "Broken link"]])
 
 
 
