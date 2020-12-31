@@ -1,0 +1,8 @@
+{:lein         true
+ :builds       {:app {:target     :browser
+                      :output-dir "resources/public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [reagent-heroku.core]}}
+                      :devtools   {:after-load reagent-heroku.core/mount-root}}}
+ :dev-http     {3000 {:root    "resources/public"
+                      :handler reagent-heroku.handler/app}}}
