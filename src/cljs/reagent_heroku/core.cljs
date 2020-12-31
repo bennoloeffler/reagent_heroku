@@ -33,9 +33,9 @@
     [:span.main
      [:h1 "BELs erstes ClojureScript..."]
      [:br]
-     [:div [calc/calc]]
+     ;[:div [calc/calc]]
      [:br]
-     [:div [bmi/bmi]]
+     ;[:div [bmi/bmi]]
      [:br]]))
 
 (comment
