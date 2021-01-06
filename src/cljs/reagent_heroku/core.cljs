@@ -35,7 +35,7 @@
      [:br]
      ;[:div [calc/calc]]
      [:br]
-     [bmi/bmi]
+     ;[bmi/bmi]
      [:br]]))
 
 (comment
@@ -113,7 +113,7 @@
         (session/put! :route {:current-page (page-for current-page)
                               :route-params route-params})
         (clerk/navigate-page! path)))
-        
+
     :path-exists?
     (fn [path]
       (boolean (reitit/match-by-path router path)))})
