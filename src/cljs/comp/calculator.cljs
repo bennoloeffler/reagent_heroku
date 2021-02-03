@@ -23,7 +23,7 @@
 
 
 (defn s%f [precision num]
-  (goog.string/format (str "%." precision "f") num))
+  (str (.toFixed num precision)))
 
 
 (defn adapt-size [num]
@@ -140,4 +140,3 @@
       [:td [akey "."]]
       [:td [anop "="  "orange"]]]]]
    [:a {:href "https://gist.github.com/bennoloeffler/f33c61b2d8ba0dd5dc9c396a6ced8482"} "source"]])
-

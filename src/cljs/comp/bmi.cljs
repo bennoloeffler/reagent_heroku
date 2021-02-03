@@ -17,7 +17,7 @@
   (/ kg (* (/ cm 100) (/ cm 100))))
 
 (defn s%f [precision num]
-  (goog.string/format (str "%." precision "f") num))
+  (str (.toFixed num precision)))
 
 (defn calc-state [{:keys  [kg cm bmi]}]
   (cond
@@ -26,7 +26,7 @@
     (nil? cm) (swap! state assoc :cm (calc-cm kg bmi))
     :else (swap! state assoc :bmi (calc-bmi kg cm)))) ; finally - make bmi consistent - even if available
 
-(comment ;tests for calcer 
+(comment ;tests for calcer
   (s%f 2 (calc-bmi 91 177))
   (s%f 1 (calc-kg 177 29.05))
   (s%f 0 (calc-cm 91 29.05))
@@ -57,5 +57,3 @@
        [:tr [:td "kg"]  [:td [slider :kg 1 20 200 (:kg @state) :bmi]]]
        [:tr [:td "bmi"] [:td [slider :bmi 2 5 70 (:bmi @state) :kg]]]]]
      [:a {:href "https://gist.github.com/bennoloeffler/93bb1436229f6dcb8a843505615cee4b"} "source"]]))
-
-
